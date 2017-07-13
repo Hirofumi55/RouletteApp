@@ -12,6 +12,7 @@
 		7E7EB4E11F17B56300376DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4DF1F17B56300376DA6 /* Main.storyboard */; };
 		7E7EB4E31F17B56300376DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4E21F17B56300376DA6 /* Assets.xcassets */; };
 		7E7EB4E61F17B56300376DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4E41F17B56300376DA6 /* LaunchScreen.storyboard */; };
+		7E7EB4EE1F17B8B800376DA6 /* Roulette.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7E7EB4E21F17B56300376DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7EB4E51F17B56300376DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7EB4E71F17B56300376DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Roulette.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				7E7EB4DB1F17B56300376DA6 /* AppDelegate.swift */,
 				7E7EB4DD1F17B56300376DA6 /* ViewController.swift */,
 				7E7EB4DF1F17B56300376DA6 /* Main.storyboard */,
+				7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */,
 				7E7EB4E21F17B56300376DA6 /* Assets.xcassets */,
 				7E7EB4E41F17B56300376DA6 /* LaunchScreen.storyboard */,
 				7E7EB4E71F17B56300376DA6 /* Info.plist */,
@@ -126,6 +129,7 @@
 			files = (
 				7E7EB4E61F17B56300376DA6 /* LaunchScreen.storyboard in Resources */,
 				7E7EB4E31F17B56300376DA6 /* Assets.xcassets in Resources */,
+				7E7EB4EE1F17B8B800376DA6 /* Roulette.csv in Resources */,
 				7E7EB4E11F17B56300376DA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

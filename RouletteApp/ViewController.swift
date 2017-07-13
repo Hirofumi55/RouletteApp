@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //ルーレット結果を出力するラベル
+    @IBOutlet weak var rouletteLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +23,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    
+    //Startボタン押下で呼び出されるメソッド
+    @IBAction func tapStartButton(_ sender: Any) {
+    }
 
 }
 
