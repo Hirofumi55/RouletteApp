@@ -13,6 +13,7 @@
 		7E7EB4E31F17B56300376DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4E21F17B56300376DA6 /* Assets.xcassets */; };
 		7E7EB4E61F17B56300376DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4E41F17B56300376DA6 /* LaunchScreen.storyboard */; };
 		7E7EB4EE1F17B8B800376DA6 /* Roulette.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */; };
+		7E7EB4F01F19BDA400376DA6 /* OperationCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EB4EF1F19BDA400376DA6 /* OperationCSV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7E7EB4E51F17B56300376DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7EB4E71F17B56300376DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Roulette.csv; sourceTree = "<group>"; };
+		7E7EB4EF1F19BDA400376DA6 /* OperationCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCSV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				7E7EB4DB1F17B56300376DA6 /* AppDelegate.swift */,
 				7E7EB4DD1F17B56300376DA6 /* ViewController.swift */,
+				7E7EB4EF1F19BDA400376DA6 /* OperationCSV.swift */,
 				7E7EB4DF1F17B56300376DA6 /* Main.storyboard */,
 				7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */,
 				7E7EB4E21F17B56300376DA6 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7EB4F01F19BDA400376DA6 /* OperationCSV.swift in Sources */,
 				7E7EB4DE1F17B56300376DA6 /* ViewController.swift in Sources */,
 				7E7EB4DC1F17B56300376DA6 /* AppDelegate.swift in Sources */,
 			);
