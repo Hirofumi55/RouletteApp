@@ -7,16 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E73237A1F1D15EB0056AD86 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7323791F1D15EB0056AD86 /* Realm.framework */; };
+		7E73237B1F1D15EB0056AD86 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7323791F1D15EB0056AD86 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E73237E1F1D15F40056AD86 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E73237D1F1D15F40056AD86 /* RealmSwift.framework */; };
+		7E73237F1F1D15F40056AD86 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E73237D1F1D15F40056AD86 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E7EB4DC1F17B56300376DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EB4DB1F17B56300376DA6 /* AppDelegate.swift */; };
 		7E7EB4DE1F17B56300376DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EB4DD1F17B56300376DA6 /* ViewController.swift */; };
 		7E7EB4E11F17B56300376DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4DF1F17B56300376DA6 /* Main.storyboard */; };
 		7E7EB4E31F17B56300376DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4E21F17B56300376DA6 /* Assets.xcassets */; };
 		7E7EB4E61F17B56300376DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4E41F17B56300376DA6 /* LaunchScreen.storyboard */; };
-		7E7EB4EE1F17B8B800376DA6 /* Roulette.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */; };
-		7E7EB4F01F19BDA400376DA6 /* OperationCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EB4EF1F19BDA400376DA6 /* OperationCSV.swift */; };
+		7E7EB4F01F19BDA400376DA6 /* OperationRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EB4EF1F19BDA400376DA6 /* OperationRealm.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7E73237C1F1D15EB0056AD86 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7E73237F1F1D15F40056AD86 /* RealmSwift.framework in Embed Frameworks */,
+				7E73237B1F1D15EB0056AD86 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7E7323791F1D15EB0056AD86 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		7E73237D1F1D15F40056AD86 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		7E7EB4D81F17B56300376DA6 /* RouletteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouletteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7EB4DB1F17B56300376DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E7EB4DD1F17B56300376DA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +44,7 @@
 		7E7EB4E21F17B56300376DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7EB4E51F17B56300376DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7EB4E71F17B56300376DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Roulette.csv; sourceTree = "<group>"; };
-		7E7EB4EF1F19BDA400376DA6 /* OperationCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCSV.swift; sourceTree = "<group>"; };
+		7E7EB4EF1F19BDA400376DA6 /* OperationRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationRealm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E73237E1F1D15F40056AD86 /* RealmSwift.framework in Frameworks */,
+				7E73237A1F1D15EB0056AD86 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,8 @@
 		7E7EB4CF1F17B56300376DA6 = {
 			isa = PBXGroup;
 			children = (
+				7E73237D1F1D15F40056AD86 /* RealmSwift.framework */,
+				7E7323791F1D15EB0056AD86 /* Realm.framework */,
 				7E7EB4DA1F17B56300376DA6 /* RouletteApp */,
 				7E7EB4D91F17B56300376DA6 /* Products */,
 			);
@@ -60,9 +83,8 @@
 			children = (
 				7E7EB4DB1F17B56300376DA6 /* AppDelegate.swift */,
 				7E7EB4DD1F17B56300376DA6 /* ViewController.swift */,
-				7E7EB4EF1F19BDA400376DA6 /* OperationCSV.swift */,
+				7E7EB4EF1F19BDA400376DA6 /* OperationRealm.swift */,
 				7E7EB4DF1F17B56300376DA6 /* Main.storyboard */,
-				7E7EB4ED1F17B8B800376DA6 /* Roulette.csv */,
 				7E7EB4E21F17B56300376DA6 /* Assets.xcassets */,
 				7E7EB4E41F17B56300376DA6 /* LaunchScreen.storyboard */,
 				7E7EB4E71F17B56300376DA6 /* Info.plist */,
@@ -80,6 +102,8 @@
 				7E7EB4D41F17B56300376DA6 /* Sources */,
 				7E7EB4D51F17B56300376DA6 /* Frameworks */,
 				7E7EB4D61F17B56300376DA6 /* Resources */,
+				7E73237C1F1D15EB0056AD86 /* Embed Frameworks */,
+				7E7323801F1D16B60056AD86 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -102,7 +126,6 @@
 				TargetAttributes = {
 					7E7EB4D71F17B56300376DA6 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6S724ALA48;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,19 +155,35 @@
 			files = (
 				7E7EB4E61F17B56300376DA6 /* LaunchScreen.storyboard in Resources */,
 				7E7EB4E31F17B56300376DA6 /* Assets.xcassets in Resources */,
-				7E7EB4EE1F17B8B800376DA6 /* Roulette.csv in Resources */,
 				7E7EB4E11F17B56300376DA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E7323801F1D16B60056AD86 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7E7EB4D41F17B56300376DA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7EB4F01F19BDA400376DA6 /* OperationCSV.swift in Sources */,
+				7E7EB4F01F19BDA400376DA6 /* OperationRealm.swift in Sources */,
 				7E7EB4DE1F17B56300376DA6 /* ViewController.swift in Sources */,
 				7E7EB4DC1F17B56300376DA6 /* AppDelegate.swift in Sources */,
 			);
@@ -271,7 +310,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6S724ALA48;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RouletteApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = herofumi.practice.RouletteApp;
@@ -284,7 +327,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6S724ALA48;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RouletteApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = herofumi.practice.RouletteApp;
@@ -312,6 +359,7 @@
 				7E7EB4EC1F17B56300376DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
