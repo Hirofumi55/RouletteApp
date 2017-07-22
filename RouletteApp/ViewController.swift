@@ -19,6 +19,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //デフォルトRealmを取得する
+        //Realmの取得はスレッドごとに必要になる
+        let realm = try! Realm()
+        
+        //Realmに保存されているすべてのオブジェクトを削除する
+        //try! realm.write {
+        //    realm.deleteAll()
+        //}
+        
+        
         //Humanクラスのオブジェクトを作成し、プロパティに値をセット
         let Hirofumi = Human()
         Hirofumi.id = "0"
@@ -36,10 +46,6 @@ class ViewController: UIViewController {
         Kasahara.id = "3"
         Kasahara.name = "Kasahara"
         
-        
-        //デフォルトRealmを取得する
-        //Realmの取得はスレッドごとに必要になる
-        let realm = try! Realm()
         
         //トランザクションを開始して、オブジェクトをRealmに追加する
         try! realm.write {
@@ -70,7 +76,7 @@ class ViewController: UIViewController {
         
         
         //0~4の乱数を生成する
-        let _: Int = Int(arc4random_uniform(5))
+        let num = Int(arc4random_uniform(5))
         
         //Realmからデータを取得する
         let result = realm.objects(Human.self)
@@ -82,17 +88,9 @@ class ViewController: UIViewController {
         print(result[0].id)
         print(result[0].id)
         print(result.count)
-        
-        //if let selectedName = result[0].name {
             
             //選択された氏名をラベルに表示する
-            rouletteLabel.text = result[0].name
-        //}
-        
-        //Realmに保存されているすべてのオブジェクトを削除する
-        //try! realm.write {
-        //    realm.deleteAll()
-        //}
+            rouletteLabel.text = result[num].name
         
         
     }
