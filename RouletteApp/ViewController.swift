@@ -15,19 +15,44 @@ class ViewController: UIViewController {
     //ルーレット結果を出力するラベル
     @IBOutlet weak var rouletteLabel: UILabel!
     
-    //Realmから選択された氏名を格納
-    var selectedName : String = "初期値"
-    
-    //Realmから選択されたRowを格納
-    var selectedRow : [String] = ["",""]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad()")
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Humanクラスのオブジェクトを作成し、プロパティに値をセット
+        let Hirofumi = Human()
+        Hirofumi.id = "0"
+        Hirofumi.name = "Hirofumi"
+        
+        let Doshow = Human()
+        Doshow.id = "1"
+        Doshow.name = "Doshow"
+        
+        let Show = Human()
+        Show.id = "2"
+        Show.name = "Show"
+        
+        let Kasahara = Human()
+        Kasahara.id = "3"
+        Kasahara.name = "Kasahara"
+        
+        
+        //デフォルトRealmを取得する
+        //Realmの取得はスレッドごとに必要になる
+        let realm = try! Realm()
+        
+        //トランザクションを開始して、オブジェクトをRealmに追加する
+        try! realm.write {
+            realm.add(Hirofumi)
+            realm.add(Doshow)
+            realm.add(Show)
+            realm.add(Kasahara)
+            print("Realm Add")
+        }
+        
+        print("viewDidLoad")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,16 +63,39 @@ class ViewController: UIViewController {
     //Startボタン押下で呼び出されるメソッド
     @IBAction func tapStartButton(_ sender: Any) {
         
+        //デフォルトRealmを取得する
+        //Realmの取得はスレッドごとに必要になる
+        let realm = try! Realm()
+        print("Realm取得")
+        
+        
         //0~4の乱数を生成する
-        let num = arc4random_uniform(5) + 1
-        print(num)
+        let _: Int = Int(arc4random_uniform(5))
         
+        //Realmからデータを取得する
+        let result = realm.objects(Human.self)
+        print("Realmから該当するデータを取得")
         
-        //選択された氏名をラベルに表示する
-        selectedName = selectedRow[1]
-        rouletteLabel.text = selectedName
+        //Realmの中身をログに出力
+        print(result)
+        print(result[0])
+        print(result[0].id)
+        print(result[0].id)
+        print(result.count)
+        
+        //if let selectedName = result[0].name {
+            
+            //選択された氏名をラベルに表示する
+            rouletteLabel.text = result[0].name
+        //}
+        
+        //Realmに保存されているすべてのオブジェクトを削除する
+        //try! realm.write {
+        //    realm.deleteAll()
+        //}
+        
         
     }
-
+    
 }
 

@@ -20,11 +20,9 @@ import RealmSwift
 class Human: Object {
     
     //プロパティの宣言
-    //プライマリーキー
+    //ID
     dynamic var id = "0"
     
     //氏名
     dynamic var name = "名無しさん"
-    
-    
 }
